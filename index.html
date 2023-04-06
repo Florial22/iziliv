@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./images/icons/SVG/favicons.svg">
+    <title>IZILIV</title>
+    <script src="./js/app.js" type="module" defer></script>
+</head>
+<body>
+    
+        <section class="hero">
+            <header class="container">
+                <section class="logo-section">
+                    <img src="./images/icons/SVG/iziliv.svg" alt="logo">
+                    <div class="donate">
+                        <div>
+                            <a href="pages/donate.html">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            </a>
+                        </div>
+                        <p><a href="pages/donate.html">Faire un don</a></p>
+                    </div>
+                </section>
+                <section class="search-section">
+                        <form action="">
+                            <input placeholder="Rechercher un livre" type="text">
+                            <button type="submit"><i class="fa-brands fa-searchengin"></i></button>
+                        </form>
+                </section>
+            </header>
+    
+            <section class="quote-box container">
+                
+                <span class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </span>
+
+                <h3 class="quote">
+                   
+                </h3>
+            </section>
+        </section> 
+
+    <div class="container">
+
+        <section class="filter">
+            <div class="all active">Tous</div>
+            <div class="fr">Livre Francais</div>
+            <div class="en">Livre Englais</div>
+            <div class="kr">Livre Kreyol</div>
+            <div class="kid">Livre Enfant</div>
+            <div class="fict">Livre fiction</div>
+            <div class="novel">Roman</div>
+            <div class="selfD">Developpement</div>
+        </section>
+
+        <section class="books">
+          
+        </section>
+
+    </div>
+
+    <!--  theme implamentation-->
+    <div class="theme" hidden>
+        <div class="light">
+            <i class="fa-solid fa-sun"></i>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <section class="logo-2">
+            <img src="./images/icons/SVG/logo2.svg" alt="">
+        </section>
+
+        <section class="contact">
+            <h5>Contacter nous</h5>
+            <span class="insta-logo">
+                <a href="https://www.instagram.com/iziliv_ht/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://web.facebook.com/iziliv.ht" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </span>
+        </section>
+
+        <section class="mailing">
+            <h5 class="mail-title">
+                Enregistrer sur notre newsletter
+            </h5>
+            <div class="mail-form">
+                <form action="">
+                    <input type="email" name="email" id="mail" placeholder="votre email">
+                    <button>envoyer</button>
+                </form>
+            </div>
+
+        </section>
+
+    </footer>
+    
+</body>
+</html>
+
+<!-- icon of donation: <i class="fa-solid fa-hand-holding-dollar"></i> -->
+
+<!-- -- 
+    french--books
+    <div class="book-card">
+                    <div class="book-cover">
+                        <img src="./images/cover/izi-ne-le-dis-pas-a-maman.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="">
+                            <h3>Ne le dis pas à maman</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, laboriosam qui. Iste voluptatem voluptatum repudiandae!</p>
+                            <p class="author"> <i class="fa-solid fa-user"></i>  Toni Maguire</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="./images/cover/izi-peaunoir-masque-blanc.jpg" alt="">
+                    </div>
+                    <div class="info">
+
+                        <a href="">
+                            <h3>Peau noire, masques blancs</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p class="author"> <i class="fa-solid fa-user"></i> Frantz Fanon</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="./images/cover/izi-plus-malin-que-le-diable.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="">
+                            <h3>Plus malin que le diable</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p class="author"> <i class="fa-solid fa-user"></i> Frantz Fanon</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="./images/cover/izi-pourvoir-des-habitudes.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="">
+                            <h3>Le pouvoir des habitudes</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p class="author"> <i class="fa-solid fa-user"></i> Charles Duhigg</p>
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="./images/cover/izi-enavant-toute.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="">
+                            <h3>En avant toutes</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p class="author"> <i class="fa-solid fa-user"></i> Nell Scovell and Sheryl Sandberg</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="./images/cover/richandporDad.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="">
+                            <h3>Père Riche Père Pauvre</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p class="author"> <i class="fa-solid fa-user"></i> robert t kiyosaki </p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="./images/cover/ta-deuxien-vie.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="">
+                            <h3>Ta deuxieme vie commence quand tu comprends...</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p class="author"> <i class="fa-solid fa-user"></i> Raphaëlle Giordano </p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="./images/cover/un-garcon-cest-presque-rien.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="">
+                            <h3>Un garcon c'est presque rien</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p class="author"> <i class="fa-solid fa-user"></i> Lisa balavoine</p>
+                        </a>
+                    </div>
+                    <span class="card-status">
+                        Free
+                    </span>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="./images/cover/un-lon-chemin.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="">
+                            <h3>Un long chemin vers la liberté</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p class="author"> <i class="fa-solid fa-user"></i> Nelson Mandela</p>
+                        </a>
+                    </div>
+                </div> -->
+

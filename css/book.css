@@ -1,0 +1,157 @@
+.header-section{
+    background-color: var(--color-primary) ;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 .1rem .3rem var(--color-accent);
+}
+
+.header-section .principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:.5rem;
+}
+
+.header-section h1{
+    margin: 0;
+    font-family: 'Roboto', 'Permanent Marker', cursive;
+    text-transform: capitalize;
+}
+
+.header-section .principal div{
+    font-size: 1.5rem;
+}
+
+.header-section .logo-2{
+    position: absolute;
+    width: 3rem;
+    top: 25%;
+    left: 1rem;
+}
+.logo-2 img{
+    width: 100%;
+}
+/* end of the header */
+
+.book-section-container{
+    margin: 8rem 0 8rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.book-section-container .price{
+    position: absolute;
+    top: 0;
+    background-color: var(--color-primary);
+    color: white;
+    padding: .4rem .8rem .4rem .8rem;
+}
+
+.book-cover-container{
+    width: 22rem;
+    height: 25rem;
+}
+
+.book-cover-container img{
+    width: 100%;
+}
+
+
+.book-info-container h3:first-child{
+    margin: 0 0 2rem 0;
+    color:#1B294F;
+}
+
+.book-info-container .btns-group a{
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color:white;
+    padding:.4rem 2.2rem;
+    border-radius: .5rem;
+}
+
+.book-info-container h3:nth-child(3){
+    margin: 1.8rem 0 1rem 0;
+    color: #1B294F;
+}
+
+.book-info-container .description-book{
+    margin: 0 0 .4rem 0;
+    font-style: italic;
+}
+.book-info-container .book-author{
+    color: #1B294F;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* small device */
+
+
+
+@media screen and (max-width : 900px){
+    
+    .book-section-container{
+        margin: 5rem 0 6rem 0;
+    }
+
+    .book-cover-container{
+        width: 18rem;
+        height: 20rem;
+    }
+    
+    .book-cover-container img{
+        width: 100%;
+    }
+
+    .book-info-container h3:first-child{
+        margin: 0 0 1rem 0;
+        color:#1B294F;
+    }
+
+    .book-info-container .btns-group a{
+        padding:.4rem 1.5rem;
+        border-radius: .3rem;
+    }
+    
+    .book-info-container h3:nth-child(3){
+        margin: 1.8rem 0 1rem 0;
+        color: #1B294F;
+    }
+    
+}
+
+
+
+/* for phones */
+
+@media screen and (max-width : 670px){
+
+    .header-section{
+        height: 9vh;
+    }
+
+
+    .book-section-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0 0 0;
+    }
+
+    .book-cover-container{
+       width: 20rem;
+       
+    }
+
+    .book-info-container {
+        margin-top: 8rem ;
+    }
+
+    
+}

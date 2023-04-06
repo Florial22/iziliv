@@ -1,0 +1,164 @@
+:root{
+    --color-primary: #8BCED5;
+    --color-primary2: #4a969f;
+    --color-bg: #dfe1e3;
+    --color-bg2: rgb(243, 239, 239);
+    --color-text: rgb(107, 102, 102);
+    --color-accent: #E84118;
+}
+
+body{
+    background: url("../images/other/new-bg-hero.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-section{
+    background-color: var(--color-primary) ;
+    height: 15vh;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 .1rem .3rem var(--color-accent);
+}
+
+.header-section .principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:.5rem;
+}
+
+.header-section h1{
+    margin: 0;
+    font-family: 'Roboto', 'Permanent Marker', cursive;
+    text-transform: capitalize;
+}
+
+.header-section .principal div{
+    font-size: 1.5rem;
+}
+
+.logo-2{
+    position: absolute;
+    width: 3rem;
+    top: 25%;
+    left: 1rem;
+}
+.logo-2 img{
+    width: 100%;
+}
+
+/* main */
+
+main{
+    background-color: var(--color-bg);
+    opacity: 0.8;
+    width: 70%;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    font-family: 'Roboto', serif, sans-serif;
+}
+
+/* paypal and moncash box */
+
+section img{
+    width: 100%;
+}
+
+section{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    column-gap: 1rem;
+}
+
+section .moncash-box{
+    border:2px solid var(--color-accent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .moncash-box div{
+    width: 6rem;
+}
+
+section .moncash-box p{
+   color: var(--color-bg);
+   font-size:1.3rem;
+   text-shadow: 0 1px 2px var(--color-primary);
+}
+
+section .paypal-box{
+  border: 1px solid var(--color-primary);
+  padding: 2rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .paypal-box div:first-child{
+    width: 7rem;
+}
+
+section .paypal-box div:nth-child(2){
+    display: inline;
+    width: 12rem;
+    height: 1rem;
+    padding: .6rem;
+    background-color: rgb(110, 110, 5);
+    display: flex;
+    justify-content: center;
+}
+
+section .paypal-box div:nth-child(2) a img{
+
+    width: 3rem;
+
+}
+
+
+
+/* mini devices */
+
+@media screen and (max-width : 600px){
+
+    .header-section{
+        height: 9vh;
+    }
+
+    main{
+        width: 87%;
+        padding: 3rem 1.5rem;
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
+
+    section .moncash-box{
+        border-bottom:2px solid var(--color-primary);
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        padding-bottom: 1rem;
+    }
+
+    section .paypal-box{
+        border:none;
+        padding-top: 1rem;
+      }
+
+}

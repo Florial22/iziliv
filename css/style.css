@@ -1,0 +1,472 @@
+:root{
+    --color-primary: #8BCED5;
+    --color-primary2: #4a969f;
+    --color-bg: #dfe1e3;
+    --color-bg2: rgb(243, 239, 239);
+    --color-text: rgb(107, 102, 102);
+    --color-accent: #E84118;
+}
+
+.dark-theme-variables{
+    --color-bg: #181a1e;
+    --color-bg2: rgba(0,0,0, .4);
+    --color-text: #edeffd;
+}
+
+/* theme boxes */
+
+.theme{
+    position: fixed;
+    top: 25rem;
+    left: .4rem;
+}
+
+.theme .light{
+    margin-bottom: .3rem;
+    background-color: var(--color-primary);
+    padding: .4rem .3rem .4rem .3rem;
+    border-radius: .7rem;
+    color: var(--color-bg2);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.391);
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.hero{
+    background-image: url("../images/other/new-bg-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 0 .1rem .1rem #8BCED5;
+}
+
+.container{
+    width: 80%;
+    margin:  0 auto;
+}
+
+
+
+.logo-section{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 1rem;
+   position:relative;
+}
+
+.logo-section img{
+    width: 20rem;  
+}
+
+.logo-section .donate{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 4rem;
+}
+.logo-section .donate a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-section .donate div{
+    background-color: white;
+    color: var(--color-accent);
+    padding:.5rem;
+    border-radius: 50%;
+    border:3px solid var(--color-accent);
+    z-index: 1;
+}
+
+.logo-section .donate p{
+    background-color: var(--color-accent);
+    color: white;
+    padding: .2rem .4rem .2rem .5rem;
+    margin-left: -0.4rem;
+    border-radius: 0 .3rem .3rem 0;
+    font-size: .8rem;
+}
+
+/* search section */
+.search-section{
+    margin-top: 1rem 0 1rem 0;
+    position:relative;
+}
+
+.search-section form input{
+    width: 90%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: transparent;
+    border-top:0 ;
+    border-left: 0;
+    border-right:0 ;
+    border-bottom: .1rem solid #bfcbca;
+    border-radius: 0;
+
+}
+
+.search-section form button{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    position:absolute;
+    right: -0.2rem;
+    bottom: 1.8rem;
+    cursor: pointer;
+}
+
+.search-section form input:focus{
+    outline: none;
+}
+
+.search-section form input::placeholder, .container .search-section form input{
+    font-size: 1.1rem;
+    color : white;
+    padding-left: .1rem;
+}
+
+
+/* quote section */
+
+
+.quote-icon{
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.quote{
+    margin: 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+
+/* books category */
+.filter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.filter div{
+    background-color: var(--color-primary);
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    color: var(--color-text);
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.filter .active{
+    background-color: var(--color-primary2);
+    color:white
+}
+
+/* books */
+
+.french-books{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1.3rem;
+}
+
+.french-books .book-card{
+    border-radius: 1rem;
+    background-color: var(--color-bg2);
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    position: relative;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.391);
+    transition: all ease 1s;
+}
+
+.french-books .book-card:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.591);
+    transition: all ease 1s;
+
+}
+
+.french-books .book-card .book-cover img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.french-books .book-card .info h3{
+    margin: .4rem 0 0 .8rem;
+    color: var(--color-primary);
+    font-size: .9rem;
+}
+
+.french-books .book-card .info p{
+    margin: .6rem 0 0 .8rem;
+    color: var(--color-text);
+    font-size: .7rem;
+}
+
+.user-icon{
+    color: var(--color-primary);
+}
+
+.french-books .book-card .info .author{
+    font-size: .5rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-style: italic;
+}
+
+.french-books .book-card .info a{
+    text-decoration: none;
+}
+
+
+/* footer */
+
+.footer{
+    height: 38vh;
+    background-color: var(--color-primary);
+    box-shadow: 0 -1px .2rem rgba(0, 0, 0, 0.398);
+    padding-top: 2rem;
+
+}
+
+.footer .logo-2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer .logo-2 img{
+    width: 5rem;
+}
+
+.footer .contact{
+    margin-top: .8rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .contact h5,.footer .contact .insta-logo {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.4rem;
+    text-transform: uppercase;
+}
+
+.footer .contact .insta-logo a:first-child {
+    color: #000;
+}
+
+.footer .contact .insta-logo a:nth-child(2) {
+    color:#000;
+    margin-left: .4rem;
+}
+
+.contact .insta-logo{
+    font-size: 1.8rem;
+}
+
+.mailing{
+    margin-top: .4rem;
+}
+
+.mailing .mail-title{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.mailing .mail-form{    
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mailing .mail-form form{
+    width: 30rem;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.mailing .mail-form form input{
+    background-color: transparent;
+    border: 1px solid black;
+    height: 1.5rem;
+}
+
+.mailing .mail-form form input::placeholder{
+    color: black;
+    font-size: 1rem;
+}
+
+.mailing .mail-form form button{
+    background-color: black;
+    border: 1px solid black;
+    color: white
+
+}
+
+/* small size */
+
+@media screen and (max-width : 1200px){
+
+    .container{
+        width: 85%;
+        margin:  0 auto;
+    }
+
+    .french-books{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1.3rem;
+    }
+    
+}
+
+
+
+@media screen and (max-width : 800px){
+
+    .container{
+        width: 88%;
+        margin:  0 auto;
+    }
+
+    .filter{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:.4rem;
+    }
+
+
+    .french-books{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.2rem;
+    }
+    
+
+    .logo-section .donate{
+        right: 2rem;
+        top: .2rem;
+    }
+}
+
+
+
+/* for phones */
+
+@media screen and (max-width : 600px){
+
+    .container{
+        width: 95%;
+        margin:  0 auto;
+    }
+
+
+    .hero{
+
+        background-size: contain;
+        /* background-repeat: no-repeat; */
+        background-position:center
+    }
+
+    .logo-section img{
+        width: 15rem;  
+    }
+
+    .search-section form input{
+        width: 90%;
+    
+    }
+
+
+    .filter{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:.4rem;
+    }
+    .filter div{
+        display: flex;
+        justify-content: center ;
+    }
+
+    .french-books{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
+
+    .french-books .book-card .info h3{
+        margin: .3rem 0 0 .4rem;
+        font-size: .7rem;
+    }
+
+    .french-books .book-card .info p{
+        margin: .3rem 0 0 .4rem;
+        font-size: .5rem;
+    }
+
+    .logo-section .donate{
+        right: 1rem;
+        top: 0;
+    }
+
+    .logo-section .donate div{
+        
+        padding:.3rem;
+        border-radius: 50%;
+        border:2px solid var(--color-accent);
+    }
+    
+    .logo-section .donate p{
+        font-size: .6rem;
+    }
+
+
+    /* footer */
+
+
+    .footer .logo-2 img{
+        width: 3rem;
+    }
+
+    .mailing .mail-form form{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+
+    .mailing .mail-form form input{
+        border-radius: 0;
+    }
+    
+}

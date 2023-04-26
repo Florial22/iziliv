@@ -41,7 +41,7 @@ class BookItem{
     constructor(todo){
         const coverName = todo.book_cover
         const book_div = createElement("div",{
-            class : "book-card"
+            class : `book-card  ${todo.lang}`
         })
 
         const bookCover = createElement("div",{
@@ -77,9 +77,16 @@ class BookItem{
 
         author.innerHTML = `<span class="user-icon"><i class="fa-solid fa-user"></i></span> ${todo.author}`
 
+        const language = createElement("p",{
+            class: "author"
+        })
+
+        language.innerHTML = `<i class="fa-solid fa-globe"></i> ${todo.lang} `
+
         linkInfo.append(title)
         linkInfo.append(description)
         linkInfo.append(author)
+        linkInfo.append(language)
         book_div.append(bookCover)
         book_div.append(divInfo)
         this.bkdiv = book_div

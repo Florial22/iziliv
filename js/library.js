@@ -112,5 +112,30 @@ export const all_books = [
         status: true,
         price : "Free",
         lang: "Fr"
+    },
+
+    {
+        id : 11,
+        title : "How to Debate Leftists and Destroy Them 11 Rules for Winning the Argument",
+        description: " The problem, as Ben Shapiro puts it in this must-read, is that “because conservatives don’t think about how to win that they constantly lose” in confrontations with leftists. The solution is to stop taking the bullying and learning to argue for victory. Among Shapiro’s rules for beating the left in confrontations are: Be willing to take a punch. (conservatives tend to shy away from confrontations because the left is rhetorically violent; but it is important “to walk toward the fire.\” ) Hit hard, hit first. (leftists stage muggings; instead of fighting by Marquis of Queensberry rules, conservatives need to accept the strategy Mike Tyson: “Everybody has a plan until they get punched in the mouth.”) Immediately frame the debate. (“When you’re discussing global warming , for example, the proper question is not whether man is causing global warming but whether man can fix global warming—a question to which the universally acknowledged answer is no unless we are willing to revert to the pre industrial age.\”) There are eight more rules that will allow a conservative to debate a leftist and destroy him. How to Debate Leftists and Destroy Them is not just a “how to” book. It is a survival manual. ",
+        book_cover : "howToDebateAndDestroy-100.jpg",
+        book_link: "howTodebateandwin.pdf",
+        author: "Ben Shapiro",
+        status: true,
+        price : "Free",
+        lang: "eng"
+    },
+
+    {
+        id : 12,
+        title : "Johnny The Walrus",
+        description: "Johnny is a little boy with a big imagination. One day he pretends to be a big scary dinosaur, the next day he’s a knight in shining armor or a playful puppy. But when the internet people find out Johnny likes to make-believe, he’s forced to make a decision between the little boy he is and the things he pretends to be — and he’s not allowed to change his mind. From Daily Wire personality and bestselling author Matt Walsh comes a timely tale of innocence, identity, and imagination.",
+        book_cover : "jojnnyTheWalrus-100.jpg",
+        book_link: "JohnnyTheWalrus.pdf",
+        author: "Matt Walsh",
+        status: true,
+        price : "Free",
+        lang: "eng"
     }
 ]
+

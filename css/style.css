@@ -13,6 +13,10 @@
     --color-text: #edeffd;
 }
 
+.hide-book{
+    display: none;
+}
+
 /* theme boxes */
 
 .theme{
